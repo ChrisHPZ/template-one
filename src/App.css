@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+* {
+	box-sizing:border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	margin:0;
+	padding:0;
+	font-family:'Open Sans', sans-serif;
+	font-weight:300;
+	font-size:18px;
+	background:black;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h1, h2 {
+	margin:0;
+	color:white;
+	font-family:'Open Sans', sans-serif;
+	font-weight:600;
+	font-size:48px;
+	line-height:1.5;
+	text-transform: uppercase;
+}
+h2 {
+	font-size:32px;
+}
+p {
+	line-height:34px;
+}
+.header-container {
+	background-color: #282c34;
+}
+.header-grid {	
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap:5px;
+	width: 80vw;
+    margin: auto;
+    padding: 20px 0;
+}
+.header-grid-child ul {
+	display:flex;
+	flex-direction:row;
+	margin:15px 0 0 0;
+	padding:0;
+	list-style-type: none;
+	gap:15px;
+}
+.header-grid-child ul li {
+	list-style-type: none;
+}
+.header-grid-child ul li a {
+	background:white;
+	padding:10px 20px;
+	color:#282c34;
+	text-decoration:none;
+	font-size:20px;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+.header-grid-child ul li a:hover {
+	background:#80DEEA;
+	color:#282c34;
+	transition:all linear .5s;
+}
+#home {
+	background:url(./img/home-bg.jpg);
+	background-size:cover;
+	background-position:top left;
+	background-repeat:no-repeat;
+	display:flex;
+}
+.inner-content-grid {
+	width:80vw;
+	display: flex;
+  	flex-direction:row;
+	margin:auto;
+	gap:20px;
+}
+.inner-content-grid-child {
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+	padding:20px;
+	background:rgba(0,0,0,0.5);
+	flex:0 50%;
+	color:white;
+}
+.grid-container-cta {
+	display:grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap:5px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .grid-child-cta {
+	background:darkslateblue;
+	padding:20px;
+	color:black;
+	text-align:center;
+	color:white;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
