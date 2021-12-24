@@ -61,12 +61,16 @@ p {
 	color:#282c34;
 	transition:all linear .5s;
 }
-#home {
+#home,
+#about {
 	background:url(./img/home-bg.jpg);
 	background-size:cover;
 	background-position:top left;
 	background-repeat:no-repeat;
 	display:flex;
+}
+#about {
+	background:url(./img/about-bg.jpg);
 }
 .inner-content-grid {
 	width:80vw;
@@ -96,4 +100,21 @@ p {
 	color:black;
 	text-align:center;
 	color:white;
+  }
+  @media screen and (max-width:768px) {
+	  .inner-content-grid {
+		  flex-direction:column;
+	  }
+	  .grid-container-cta {
+		  grid-template-columns: auto;
+	  }
+  }
+  @media screen and (max-width:691px) {
+	  .header-grid {
+		  grid-template-columns: auto;
+		  justify-content:center;
+	  }
+	  .header-grid-child {
+		  text-align: center;
+	  }
   }
