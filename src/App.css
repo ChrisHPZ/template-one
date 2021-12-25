@@ -67,27 +67,29 @@ p {
 	background-size:cover;
 	background-position:top left;
 	background-repeat:no-repeat;
-	display:flex;
+
 }
 #about {
 	background:url(./img/about-bg.jpg);
 }
-.inner-content-grid {
-	width:80vw;
-	display: flex;
-  	flex-direction:row;
-	margin:auto;
-	gap:20px;
+.inner-content {
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap:10px;
+	padding: 300px 185px;
 }
 .inner-content-grid-child {
+	padding:20px;
+	background:rgba(0,0,0,0.5);
+	color:white;
+	text-align:center;
 	display:flex;
 	flex-direction:column;
 	justify-content: center;
-	align-items: center;
-	padding:20px;
-	background:rgba(0,0,0,0.5);
-	flex:0 50%;
-	color:white;
+}
+.inner-content-grid-child:nth-child(3) {
+	grid-column:span 2;
 }
 .grid-container-cta {
 	display:grid;
