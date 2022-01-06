@@ -13,13 +13,14 @@ const Contact = () => {
             form.current,
             'user_6975zIumYLHHRyXTghb2W'
             ).then(res => {
-                console.log(res)
+				document.getElementById('success').style.display = 'block';
+                document.getElementById('contact-form').reset()
             }).catch(err => {
-                console.log(err)
+                document.getElementById('error').style.display = 'block';
             });
     }
     return (
-        <form className="contact-form" ref={form} onSubmit={sendEmail}>
+        <form className="contact-form" id="contact-form" ref={form} onSubmit={sendEmail}>
             <div className="form-section">
                 <label htmlFor="name"><BsFillPersonFill /> Name:</label>
                 <input type="text" id="name" name="name" required />
@@ -33,6 +34,8 @@ const Contact = () => {
                 <textarea id="message" name="message" required />
             </div>
             <button type="submit" className="form-submit"><RiMailSendFill /> SEND</button>
+			<h2 id="success">Your message has been received!</h2>
+			<h2 id="error">There was a problem, please try again at a later time.</h2>
         </form>
      );
 }

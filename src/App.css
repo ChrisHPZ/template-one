@@ -162,6 +162,10 @@ p {
 .contact-form .form-section.message {
   align-items: flex-start;
 }
+#success,
+#error {
+	display:none;
+}
 @media screen and (max-width: 768px) {
   .inner-content {
     display: flex;
