@@ -158,13 +158,14 @@ p {
   width: 100%;
   padding: 16px;
   font-size: 16px;
+  cursor: pointer;
 }
 .contact-form .form-section.message {
   align-items: flex-start;
 }
 #success,
 #error {
-	display:none;
+  display: none;
 }
 @media screen and (max-width: 768px) {
   .inner-content {
@@ -185,5 +186,20 @@ p {
 @media screen and (max-width: 691px) {
   .header-grid-child {
     text-align: center;
+  }
+}
+@media screen and (max-width: 650px) {
+  #contact-form {
+    width: 100%;
+    padding: 0 10px;
+  }
+  #contact-form .form-section {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  .contact-form .form-section input {
+    max-width: 100%;
+    padding: 20px;
   }
 }
