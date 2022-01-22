@@ -37,6 +37,10 @@ p {
   margin: auto;
   padding: 20px 0;
 }
+.header-grid-child:first-child {
+  display: flex;
+  gap: 10px;
+}
 .header-grid-child ul {
   display: flex;
   flex-direction: column;
@@ -174,16 +178,16 @@ p {
   justify-content: space-between;
 }
 .circular {
-  width: 400px;
-  height: 400px;
+  width: 25vw;
+  height: 50vh;
   margin: 0;
-  border-radius: 50%;
+  border-radius: 100%;
   background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 50px;
+  font-size: 3rem;
 }
 @media screen and (max-width: 768px) {
   .inner-content {
