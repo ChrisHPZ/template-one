@@ -4,7 +4,7 @@ import { HiHome, HiInformationCircle } from "react-icons/hi";
 import { RiReactjsFill } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdEmail } from "react-icons/md";
-import Headpalm  from "../img/headpalm.jpf";
+import Headpalm  from "../img/headpalm.png";
 import { BsFacebook, BsTwitter, BsInstagram, BsYoutube } from "react-icons/bs";
 
 const Header = () => {
