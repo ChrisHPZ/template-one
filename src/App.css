@@ -80,7 +80,7 @@ p {
   transition: all linear 0.5s;
 }
 .home-container {
-	background: url(./img/home-bg.jpg);
+	background: url(./img/circles-lines.svg);
 	background-size: cover;
 	background-position: top left;
 	background-repeat: no-repeat;
