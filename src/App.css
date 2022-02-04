@@ -79,12 +79,16 @@ p {
   color: #282c34;
   transition: all linear 0.5s;
 }
-#home,
-#about {
-  background: url(./img/home-bg.jpg);
-  background-size: cover;
-  background-position: top left;
-  background-repeat: no-repeat;
+.home-container {
+	background: url(./img/home-bg.jpg);
+	background-size: cover;
+	background-position: top left;
+	background-repeat: no-repeat;
+	padding:10vh 0;
+}
+#home {
+	width:80vw;
+	margin:auto;
 }
 #about {
   background: url(./img/about-bg.jpg);
@@ -94,7 +98,6 @@ p {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
-  padding: 300px 185px;
 }
 .inner-content-grid-child {
   padding: 20px;
@@ -125,7 +128,6 @@ p {
   font-size: 46px;
   display: block;
   float: right;
-  margin-right: 72px;
 }
 .contact-form {
   display: flex;
